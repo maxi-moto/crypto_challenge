@@ -1,0 +1,7 @@
+[package]
+name = "fixed_xor"
+version = "0.1.0"
+authors = ["Max Matsumoto <mmmatsumoto@ucdavis.edu>"]
+
+[dependencies]
+rustc-serialize = "0.3"
