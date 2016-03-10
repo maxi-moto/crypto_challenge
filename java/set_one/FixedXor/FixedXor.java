@@ -2,7 +2,12 @@ import javax.xml.bind.DatatypeConverter;
 
 public class FixedXor {
     public static void print(byte[] xor) {
-        System.out.println(DatatypeConverter.printHexBinary(xor).toLowerCase());
+        try {
+        System.out.println(DatatypeConverter.printHexBinary(xor).toLowerCase()
+                + " -> " + new String(xor, "UTF-8"));
+        } catch (Exception e) {
+            System.out.println("Error converting");
+        }
     }
 
     public static byte[] xor(byte[] string, byte[] key, int length) {

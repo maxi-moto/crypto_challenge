@@ -33,10 +33,22 @@ public class XorCipher {
             char key                = Character.toChars(entry.getKey())[0];
             String decodedString    = entry.getValue();
 
-            String[] words = decodedString.split("");
-            if(words.length <= 6) {
+            int score = 0;
+            for(char c : decodedString.toCharArray()) {
+                if(Character.isLetter(c)) {
+                    score += 5;
+                } else if(c == ' ') {
+                    score += 2;
+                } else {
+                    score -= 10;
+                }
+            }
+
+            if(score > 100) {
                 System.out.println(key + " -> " + decodedString);
             }
+
+            score = 0;
         } 
     }
     
