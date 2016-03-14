@@ -1,1 +1,4 @@
 *.swp
+
+#java specific files
+*.class
