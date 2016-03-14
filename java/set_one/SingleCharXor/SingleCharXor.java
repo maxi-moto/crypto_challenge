@@ -1,5 +1,7 @@
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -22,6 +24,6 @@ public class SingleCharXor {
     public static void main(String[] args) throws Exception {
         String fileName = "challenge_4.txt";
         System.out.println("Decoding file: " + fileName);
-        List<String> decodedStrings = Cipher.decodeStrings(readFile(fileName));
+        Cipher.scoreStrings(Cipher.decodeStrings(readFile(fileName)));
     }
 }
