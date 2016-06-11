@@ -1,9 +1,10 @@
 # Crypto Challenge
-My solutions to the Matasano Crypto Challenge.
+My solutions to the Matasano Crypto Challenge. There are solutions in a few
+different languages because I think this is a good challenge to learn new ones
+with.
 
-I want to learn Rust and OCaml, so I thought I'd give it a shot with these
-challenges. Please exucse any syntax or convention errors, I'll fix them as I
-learn more!
+Languages so far:
+Java
+Rust
 
-On occasion, I might want to give these problems a shot in languages I use more
-often, like C++ and Java. I might even try javascript just because.
+
